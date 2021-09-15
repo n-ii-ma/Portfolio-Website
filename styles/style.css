@@ -181,6 +181,8 @@ header {
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
+    box-shadow: var(--shadow);
+    width: 100%;
     min-height: 300px;
 }
 
@@ -188,15 +190,78 @@ header {
     font-size: 2rem;
     font-weight: 500;
     color: var(--light);
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
 }
 
 .top-section p {
     color: var(--light);
-    padding: 0 1rem 1rem 1rem;
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
 }
 
 /* Top Section for Landscape Mobile Screens */
 @media only screen and (min-width: 320px) and (orientation: landscape) {
-    
+    .top-section {
+        background-position: center;
+        min-height: 250px;
+        margin-top: 1rem;
+    }
 }
+
+/* Top Section for Tablet Screens */
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .top-section {
+        background-position: center;
+        min-height: 500px;
+        margin-top: 1rem;
+    }
+    
+    .top-section h2 {
+        font-size: 3rem;
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+    
+    .top-section p {
+        font-size: 1.7rem;
+        padding: 2rem 3rem;
+    }
+}
+
+/* Top Section for Tablet Landscape Screens */
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .top-section {
+        background-position: center;
+        min-height: 500px;
+        margin-top: 1rem;
+    }
+    
+    .top-section h2 {
+        font-size: 3.5rem;
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+    
+    .top-section p {
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }
+}
+
+/* Top Section for Desktop Screens */
+@media only screen and (min-width: 1200px) {
+    .top-section {
+        background-position: center;
+        min-height: 600px;
+        margin-top: 1rem;
+    }
+    
+    .top-section h2 {
+        font-size: 4rem;
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+    
+    .top-section p {
+        font-size: 2.5rem;
+        padding: 5rem 4rem;
+    }
+}
+
+/* Middle Section */
