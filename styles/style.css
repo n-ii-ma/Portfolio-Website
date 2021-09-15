@@ -1,6 +1,5 @@
 /* Universal Codes */
 :root {
-    --primary: #ddd;
     --dark: #333;
     --light: #fff;
     --shadow: 1px 1px 5px rgba(70, 70, 70, 0.8);
@@ -13,7 +12,7 @@ html {
 }
 
 body {
-    background-color: var(--primary);
+    background-color: #ddd;
     margin: 10px 20px;
     line-height: 1.5;
 }
