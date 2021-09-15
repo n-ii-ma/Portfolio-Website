@@ -42,13 +42,13 @@ header {
 }
 
 .navigation li {
+    background-color: var(--light);
+    box-shadow: var(--shadow);
     margin: 5px 0;
 }
 
 .navigation a {
     display: block;
-    background-color: var(--light);
-    box-shadow: var(--shadow);
     text-decoration: none;
     text-align: center;
     font-weight: 500;
@@ -62,5 +62,22 @@ header {
 
 /* Header for Landscape Mobile Screens */
 @media only screen and (min-width: 320px) and (orientation: landscape) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .navigation {
+        width: auto;
+        margin: 0;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        width: 6em;
+        margin: 0 10px;
+    }
 }
