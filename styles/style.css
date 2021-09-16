@@ -340,7 +340,6 @@ header {
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
-    min-height: 250px;
 }
 
 .project-desc p {
@@ -366,4 +365,20 @@ header {
 
 .tech i {
     padding: 0.5rem;
+}
+
+/* Middle Section for Landscape Mobile Screens */
+@media only screen and (min-width: 320px) and (orientation: landscape) {
+    .cards {
+        justify-items: center;
+    }
+
+    .project-title {
+        min-height: 300px;
+        width: 450px;
+    }
+
+    .project-desc {
+        width: 450px;
+    }
 }
