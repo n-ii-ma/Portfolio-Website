@@ -284,25 +284,25 @@ header {
 
 .project-title {
     box-shadow: var(--shadow);
-    min-height: 250px;
+    min-height: 275px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project1 {
+#project1 {
     background-image: url('../images/Tea-Cozy.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.project2 {
+#project2 {
     background-image: url('../images/Fashion-Planet.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.project3 {
+#project3 {
     background-image: url('../images/Goodie-Club.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -325,6 +325,7 @@ header {
 
 .title a {
     font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
     color: blueviolet;
 }
@@ -380,5 +381,52 @@ header {
 
     .project-desc {
         width: 450px;
+    }
+}
+
+/* Middle Section for Tablet Screens */
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .middle-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'project1 project2 project3'
+            'details1 details2 details3';
+        grid-gap: 1em;
+    }
+
+    .project-title {
+        min-height: 375px;
+    }
+
+    #project1 {
+        grid-area: project1;
+        background-image: url('../images/Tea-Cozy-Tablet.jpg');
+    }
+    
+    #project2 {
+        grid-area: project2;
+        background-image: url('../images/Fashion-Planet-Tablet.jpg');
+    }
+    
+    #project3 {
+        grid-area: project3;
+        background-image: url('../images/Goodie-Club-Tablet.jpg');
+    }
+
+    #details1 {
+        grid-area: details1;
+    }
+
+    #details2 {
+        grid-area: details2;
+    }
+
+    #details3 {
+        grid-area: details3;
     }
 }
