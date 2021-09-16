@@ -10,7 +10,7 @@ let desc3 = document.getElementById('details3');
 
 /* Toggle Description */
 readMore1.onclick = function() {
-    if (desc1.style.display === 'none') {
+    if (getComputedStyle(desc1).display === 'none') {
         desc1.style.display = 'block';
         readMore1.style.color = 'DeepPink';
         readMore1.innerText = 'Read Less';
@@ -23,7 +23,7 @@ readMore1.onclick = function() {
 }
 
 readMore2.onclick = function() {
-    if (desc2.style.display === 'none') {
+    if (getComputedStyle(desc2).display === 'none') {
         desc2.style.display = 'block';
         readMore2.style.color = 'DeepPink';
         readMore2.innerText = 'Read Less';
@@ -36,7 +36,7 @@ readMore2.onclick = function() {
 }
 
 readMore3.onclick = function() {
-    if (desc3.style.display === 'none') {
+    if (getComputedStyle(desc3).display === 'none') {
         desc3.style.display = 'block';
         readMore3.style.color = 'DeepPink';
         readMore3.innerText = 'Read Less';
