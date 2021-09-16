@@ -359,7 +359,6 @@ header {
 
 .project-desc a:hover {
     color: black;
-    text-decoration: none;
 }
 
 .project-desc .tech {
