@@ -577,6 +577,15 @@ footer {
 }
 
 /* Contact Page Styles */
+.contact-body {
+    margin: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
 .contact-section {
     background-color: var(--light);
     box-shadow: var(--shadow);
@@ -694,8 +703,5 @@ footer {
 
 /* Contact Footer */
 .contact-footer {
-    position: fixed;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-}
+    margin-top: auto;
+  }
