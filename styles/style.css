@@ -264,7 +264,7 @@ header {
     }
 }
 
-/* Middle Section */
+/* Middle Section Cards */
 .middle-section {
     margin-top: 1rem;
 }
@@ -332,4 +332,38 @@ header {
 .title a:hover {
     color: black;
     text-decoration: underline;
+}
+
+/* Middle Section Desc */
+.project-desc {
+    background-color: var(--light);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+}
+
+.project-desc p {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.project-desc a {
+    text-align: center;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+.project-desc a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.project-desc .tech {
+    padding: 1rem;
+    text-align: center;
+}
+
+.tech i {
+    padding: 0.5rem;
 }
