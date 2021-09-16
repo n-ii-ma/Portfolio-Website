@@ -26,7 +26,7 @@ header {
     text-align: center;
 }
 
-.title {
+.main-title {
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -89,7 +89,7 @@ header {
         justify-content: space-between;
     }
 
-    .title {
+    .main-title {
         font-size: 2.5rem;
         font-weight: 600;
     }
@@ -120,7 +120,7 @@ header {
         justify-content: space-between;
     }
 
-    .title {
+    .main-title {
         font-size: 2rem;
         font-weight: 600;
     }
@@ -151,7 +151,7 @@ header {
         justify-content: space-between;
     }
 
-    .title {
+    .main-title {
         font-size: 2.5rem;
         font-weight: 600;
     }
@@ -195,7 +195,7 @@ header {
 
 .top-section p {
     color: var(--light);
-    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    padding: 0 1.5rem 1rem 1.5rem;
 }
 
 /* Top Section for Landscape Mobile Screens */
@@ -265,3 +265,71 @@ header {
 }
 
 /* Middle Section */
+.middle-section {
+    margin-top: 1rem;
+}
+
+.middle-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.project-title {
+    box-shadow: var(--shadow);
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project1 {
+    background-image: url('../images/Tea-Cozy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project2 {
+    background-image: url('../images/Fashion-Planet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project3 {
+    background-image: url('../images/Goodie-Club.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.title {
+    width: 100%;
+    text-align: center;
+    background: var(--light);
+    opacity: 0.8;
+    line-height: 2rem;
+    box-shadow: none;
+}
+
+.title h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.title a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.title a:hover {
+    color: black;
+    text-decoration: underline;
+}
