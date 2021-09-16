@@ -284,6 +284,7 @@ header {
 
 .project-title {
     box-shadow: var(--shadow);
+    min-width: 100%;
     min-height: 275px;
     display: flex;
     align-items: center;
@@ -376,11 +377,11 @@ header {
 
     .project-title {
         min-height: 300px;
-        width: 450px;
+        min-width: 85%;
     }
 
     .project-desc {
-        width: 450px;
+        width: 85%;
     }
 }
 
@@ -443,8 +444,8 @@ header {
     }
 
     .project-title {
-        min-height: 300px;
-        width: 300px;
+        min-height: 245px;
+        min-width: 100%;
     }
 
     #project1 {
@@ -468,7 +469,7 @@ header {
     }
 
     .project-desc {
-        width: 300px;
+        width: 100%;
     }
 
     #details1 {
@@ -493,5 +494,72 @@ header {
 
     .project-desc .tech {
         font-size: 1.25rem;
+    }
+}
+
+/* Middle Section for Desktop Screens */
+@media only screen and (min-width: 1200px) {
+    .middle-section h2 {
+        font-size: 3rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'project1 project2 project3'
+            'details1 details2 details3';
+    }
+
+    .project-title {
+        min-height: 335px;
+        min-width: 90%;
+    }
+
+    #project1 {
+        grid-area: project1;
+    }
+    
+    #project2 {
+        grid-area: project2;
+    }
+    
+    #project3 {
+        grid-area: project3;
+    }
+
+    .title h3 {
+        font-size: 1.75rem;
+    }
+    
+    .title a {
+        font-size: 1.25rem;
+    }
+
+    .project-desc {
+        width: 90%;
+    }
+
+    #details1 {
+        grid-area: details1;
+    }
+
+    #details2 {
+        grid-area: details2;
+    }
+
+    #details3 {
+        grid-area: details3;
+    }
+
+    .project-desc p {
+        font-size: 1.5rem;
+    }
+    
+    .project-desc a {
+        font-size: 1.3rem;
+    }
+
+    .project-desc .tech {
+        font-size: 1.5rem;
     }
 }
