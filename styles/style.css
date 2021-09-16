@@ -5,8 +5,11 @@
     --shadow: 1px 1px 5px rgba(70, 70, 70, 0.8);
 }
 
-html {
+* {
     box-sizing: border-box;
+}
+
+html {
     font-family: 'Quicksand', sans-serif;
     color: var(--dark);
 }
@@ -579,7 +582,6 @@ footer {
 .contact-body {
     margin: 0;
     padding: 10px 20px;
-    box-sizing: border-box;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
