@@ -6,7 +6,6 @@ A personal website about my programming journey!
 + [General Info](#general-info)
 + [Technologies Used](#technologies-used)
 + [Features](#features)
-+ [Setup](#setup)
 + [Website Address](#website-address)
 + [Contact](#contact)
 
@@ -24,9 +23,6 @@ Project is created with:
 
 ## Features
 Everything about my programming journey.
-
-## Setup
-Make sure that Node.js is installed.
 
 ## Website Address
 https://n-ii-ma.github.io/Portfolio-Website/
